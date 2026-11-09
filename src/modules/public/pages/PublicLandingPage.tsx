@@ -126,7 +126,11 @@ function Brand() {
   return (
     <Link to="/" className="flex items-center gap-3">
       <div className="flex size-10 items-center justify-center rounded-lg bg-[#153b63] text-white">
-        <GraduationCap className="size-6" />
+        <img
+            src="/pwa-192x192.png"
+            alt="NBridge"
+            className="size-10 rounded-lg object-contain"
+        />
       </div>
 
       <div className="leading-tight">
