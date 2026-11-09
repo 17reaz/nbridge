@@ -5,7 +5,7 @@ import { AuthLayout } from "../layouts/AuthLayout";
 import { ProtectedRoute } from "./ProtectedRoute";
 import { LoginPage } from "../../auth/pages/LoginPage";
 import { DashboardPage } from "../../modules/dashboard/pages/DashboardPage";
-
+import { PublicLeadPage } from "../../modules/lead/pages/PublicLeadPage";
 function ModulePlaceholder({ title }: { title: string }) {
   return (
     <div className="space-y-2">
@@ -34,6 +34,8 @@ export function AppRoutes() {
       <Route element={<AuthLayout />}>
         <Route path="/login" element={<LoginPage />} />
       </Route>
+      {/* Public pages - no authentication required */}
+      <Route path="/get-started" element={<PublicLeadPage />} />
 
       {/* Protected application */}
       <Route element={<ProtectedRoute />}>
