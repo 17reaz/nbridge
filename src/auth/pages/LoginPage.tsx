@@ -17,20 +17,16 @@ export function LoginPage() {
     
 const navigate = useNavigate();
 
-const handleLogin = (e: React.FormEvent<HTMLFormElement>) => {
-  e.preventDefault();
-
-  // Demo login
-  navigate("/app", { replace: true });
-};
   const { resolvedTheme, setTheme } = useTheme();
   const [showPassword, setShowPassword] = useState(false);
   const [notice, setNotice] = useState("");
 
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    setNotice("Authentication is not connected yet.");
-  }
+  event.preventDefault();
+
+  // Demo login
+  navigate("/app", { replace: true });
+}
 
   return (
     <main className="min-h-dvh bg-background text-foreground">
