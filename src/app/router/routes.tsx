@@ -7,6 +7,7 @@ import { LoginPage } from "../../auth/pages/LoginPage";
 import { DashboardPage } from "../../modules/dashboard/pages/DashboardPage";
 import { PublicLeadPage } from "../../modules/lead/pages/PublicLeadPage";
 import { PublicLandingPage } from "@/modules/public/pages/PublicLandingPage";
+import { CandidatePage } from "@/modules/candidate/pages/CandidatePage";
 function ModulePlaceholder({ title }: { title: string }) {
   return (
     <div className="space-y-2">
@@ -43,10 +44,7 @@ export function AppRoutes() {
         <Route path="/app" element={<DashboardLayout />}>
           <Route index element={<DashboardPage />} />
           <Route path="lead" element={<ModulePlaceholder title="Lead" />} />
-          <Route
-            path="candidate"
-            element={<ModulePlaceholder title="Candidate" />}
-          />
+          <Route path="candidate" element={<CandidatePage />} />
           <Route
             path="finance"
             element={<ModulePlaceholder title="Finance" />}
