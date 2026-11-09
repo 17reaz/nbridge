@@ -1,4 +1,4 @@
-import { X, PanelLeftClose } from "lucide-react";
+import { X } from "lucide-react";
 
 import { SidebarNav } from "./SidebarNav";
 import { useApp } from "../../app/providers/AppProvider";

@@ -1,19 +1,19 @@
-import type { ReactNode } from "react";
-import { ThemeProvider as ExistingThemeProvider } from "../../components/theme-provider";
+import type { ReactNode, ComponentProps } from "react";
+import { ThemeProvider as NextThemesProvider } from "next-themes";
+
+type AppThemeProviderProps = ComponentProps<typeof NextThemesProvider>;
 
 export function AppThemeProvider({
   children,
-}: {
-  children: ReactNode;
-}) {
+}: AppThemeProviderProps) {
   return (
-    <ExistingThemeProvider
+    <NextThemesProvider
       attribute="class"
       defaultTheme="light"
       enableSystem
       disableTransitionOnChange
     >
-      {children}
-    </ExistingThemeProvider>
+      {children as ReactNode}
+    </NextThemesProvider>
   );
 }
