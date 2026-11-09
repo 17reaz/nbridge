@@ -64,8 +64,8 @@ export function AppRoutes() {
       </Route>
 
       {/* Default route */}
-      <Route path="/" element={<Navigate to="/app" replace />} />
-      <Route path="*" element={<Navigate to="/app" replace />} />
+        <Route path="/" element={<Navigate to="/login" replace />} />
+        <Route path="*" element={<Navigate to="/login" replace />} />
     </Routes>
   );
 }

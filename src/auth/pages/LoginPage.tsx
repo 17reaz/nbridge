@@ -1,6 +1,7 @@
 
 import { useState, type FormEvent } from "react";
 import { useTheme } from "next-themes";
+import { useNavigate } from "react-router-dom";
 import {
   ArrowRight,
   Eye,
@@ -13,6 +14,15 @@ import {
 } from "lucide-react";
 
 export function LoginPage() {
+    
+const navigate = useNavigate();
+
+const handleLogin = (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+
+  // Demo login
+  navigate("/app", { replace: true });
+};
   const { resolvedTheme, setTheme } = useTheme();
   const [showPassword, setShowPassword] = useState(false);
   const [notice, setNotice] = useState("");
