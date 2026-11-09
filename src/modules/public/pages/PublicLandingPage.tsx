@@ -8,7 +8,7 @@ import {
   BookOpen,
   Plane,
   ShieldCheck,
-  Menu,
+  
   CheckCircle2,
   Compass,
   Sparkles,
