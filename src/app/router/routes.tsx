@@ -3,7 +3,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import { DashboardLayout } from "../layouts/DashboardLayout";
 import { AuthLayout } from "../layouts/AuthLayout";
 import { ProtectedRoute } from "./ProtectedRoute";
-
+import { LoginPage } from "../../auth/pages/LoginPage";
 import { DashboardPage } from "../../modules/dashboard/pages/DashboardPage";
 
 function ModulePlaceholder({ title }: { title: string }) {
@@ -23,9 +23,9 @@ function ModulePlaceholder({ title }: { title: string }) {
   );
 }
 
-function LoginPage() {
-  return <ModulePlaceholder title="Login" />;
-}
+// function LoginPage() {
+//   return <ModulePlaceholder title="Login" />;
+// }
 
 export function AppRoutes() {
   return (
