@@ -6,6 +6,7 @@ import { ProtectedRoute } from "./ProtectedRoute";
 import { LoginPage } from "../../auth/pages/LoginPage";
 import { DashboardPage } from "../../modules/dashboard/pages/DashboardPage";
 import { PublicLeadPage } from "../../modules/lead/pages/PublicLeadPage";
+import { PublicLandingPage } from "@/modules/public/pages/PublicLandingPage";
 function ModulePlaceholder({ title }: { title: string }) {
   return (
     <div className="space-y-2">
@@ -36,7 +37,7 @@ export function AppRoutes() {
       </Route>
       {/* Public pages - no authentication required */}
       <Route path="/get-started" element={<PublicLeadPage />} />
-
+      <Route path="/" element={<PublicLandingPage />} />
       {/* Protected application */}
       <Route element={<ProtectedRoute />}>
         <Route path="/app" element={<DashboardLayout />}>
@@ -66,7 +67,7 @@ export function AppRoutes() {
       </Route>
 
       {/* Default route */}
-        <Route path="/" element={<Navigate to="/login" replace />} />
+        {/* <Route path="/" element={<Navigate to="/login" replace />} /> */}
         <Route path="*" element={<Navigate to="/login" replace />} />
     </Routes>
   );
