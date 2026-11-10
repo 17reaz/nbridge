@@ -7,13 +7,13 @@ import {
   UserPlus,
   Phone,
   Mail,
-  Globe,
-  ArrowUpRight,
+  // Globe,
+  // ArrowUpRight,
   MoreHorizontal,
   Filter,
   GraduationCap,
   CheckCircle2,
-  Clock3,
+  // Clock3,
   X,
 } from "lucide-react";
 
