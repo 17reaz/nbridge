@@ -12,22 +12,23 @@ import { LeadPage } from "@/modules/lead/pages/LeadPage";
 import { FinancePage } from "@/modules/finance/pages/FinancePage";
 import { FilesPage } from "../../modules/files/pages/FilesPage";
 import { OthersPage } from "../../modules/others/pages/OthersPage";
-function ModulePlaceholder({ title }: { title: string }) {
-  return (
-    <div className="space-y-2">
-      <h1 className="text-2xl font-semibold tracking-tight">{title}</h1>
-      <p className="text-sm text-muted-foreground">
-        The {title} module is ready for development.
-      </p>
+import { SettingsPage } from "../../modules/settings/pages/SettingsPage";
+// function ModulePlaceholder({ title }: { title: string }) {
+//   return (
+//     <div className="space-y-2">
+//       <h1 className="text-2xl font-semibold tracking-tight">{title}</h1>
+//       <p className="text-sm text-muted-foreground">
+//         The {title} module is ready for development.
+//       </p>
 
-      <div className="mt-6 rounded-xl border border-dashed p-10 text-center">
-        <p className="text-sm text-muted-foreground">
-          {title} content will appear here.
-        </p>
-      </div>
-    </div>
-  );
-}
+//       <div className="mt-6 rounded-xl border border-dashed p-10 text-center">
+//         <p className="text-sm text-muted-foreground">
+//           {title} content will appear here.
+//         </p>
+//       </div>
+//     </div>
+//   );
+// }
 
 // function LoginPage() {
 //   return <ModulePlaceholder title="Login" />;
@@ -52,10 +53,7 @@ export function AppRoutes() {
           <Route path="finance" element={<FinancePage />} />
           <Route path="files" element={<FilesPage />} />
           <Route path="others" element={<OthersPage />} />
-          <Route
-            path="settings"
-            element={<ModulePlaceholder title="Settings" />}
-          />
+          <Route path="settings" element={<SettingsPage />} />
         </Route>
       </Route>
 
