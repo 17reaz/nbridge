@@ -9,6 +9,7 @@ import { PublicLeadPage } from "../../modules/lead/pages/PublicLeadPage";
 import { PublicLandingPage } from "@/modules/public/pages/PublicLandingPage";
 import { CandidatePage } from "@/modules/candidate/pages/CandidatePage";
 import { LeadPage } from "../../modules/lead/pages/LeadPage";
+import { FinancePage } from "../../modules/finance/pages/FinancePage";
 function ModulePlaceholder({ title }: { title: string }) {
   return (
     <div className="space-y-2">
@@ -46,10 +47,7 @@ export function AppRoutes() {
           <Route index element={<DashboardPage />} />
           <Route path="lead" element={<LeadPage />} />
           <Route path="candidate" element={<CandidatePage />} />
-          <Route
-            path="finance"
-            element={<ModulePlaceholder title="Finance" />}
-          />
+          <Route path="finance" element={<FinancePage />} />
           <Route
             path="files"
             element={<ModulePlaceholder title="Files" />}
