@@ -4,12 +4,13 @@ import { DashboardLayout } from "../layouts/DashboardLayout";
 import { AuthLayout } from "../layouts/AuthLayout";
 import { ProtectedRoute } from "./ProtectedRoute";
 import { LoginPage } from "../../auth/pages/LoginPage";
-import { DashboardPage } from "../../modules/dashboard/pages/DashboardPage";
-import { PublicLeadPage } from "../../modules/lead/pages/PublicLeadPage";
+import { DashboardPage } from "@/modules/dashboard/pages/DashboardPage";
+import { PublicLeadPage } from "@/modules/lead/pages/PublicLeadPage";
 import { PublicLandingPage } from "@/modules/public/pages/PublicLandingPage";
 import { CandidatePage } from "@/modules/candidate/pages/CandidatePage";
-import { LeadPage } from "../../modules/lead/pages/LeadPage";
-import { FinancePage } from "../../modules/finance/pages/FinancePage";
+import { LeadPage } from "@/modules/lead/pages/LeadPage";
+import { FinancePage } from "@/modules/finance/pages/FinancePage";
+import { FilesPage } from "../../modules/files/pages/FilesPage";
 function ModulePlaceholder({ title }: { title: string }) {
   return (
     <div className="space-y-2">
@@ -48,10 +49,7 @@ export function AppRoutes() {
           <Route path="lead" element={<LeadPage />} />
           <Route path="candidate" element={<CandidatePage />} />
           <Route path="finance" element={<FinancePage />} />
-          <Route
-            path="files"
-            element={<ModulePlaceholder title="Files" />}
-          />
+          <Route path="files" element={<FilesPage />} />
           <Route
             path="others"
             element={<ModulePlaceholder title="Others" />}
