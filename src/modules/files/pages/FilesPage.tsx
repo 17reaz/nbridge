@@ -15,7 +15,7 @@ import {
   FolderOpen,
   Plus,
   Filter,
-  X,
+//   X,
 } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
