@@ -13,3 +13,13 @@
 // - onAuthStateChange()
 // - Password recovery
 // - Persistent session
+
+
+// Step	কাজ
+// 1	Supabase client setup
+// 2	Auth service তৈরি
+// 3	AuthProvider তৈরি
+// 4	LoginPage integration
+// 5	ProtectedRoute guard
+// 6	Logout integration
+// 7	Session persistence ও refresh test
